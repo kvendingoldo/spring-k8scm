@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: echo-service
+  cloud:
+    service-registry:
+      auto-registration:
+        enabled: false
+    kubernetes:
+      reload:
+        enabled: false
+        strategy: restart_context
+        mode: polling
+        period: 5s
+      config:
+        enabled: true
+        fail-fast: true
+        retry:
+          enabled: true
+        sources:
+          - name: echo-service-v1-config-yaml

@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "cm.tst",
+      "type": "java.lang.String",
+      "description": "Description for cm.tst."
+  }
+] }

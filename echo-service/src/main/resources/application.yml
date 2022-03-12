@@ -1,0 +1,12 @@
+spring:
+  output.ansi.enabled: ALWAYS
+
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
+server:
+  port: 8080
+
+cm:
+  tst: tval2
